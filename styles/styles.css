@@ -1,0 +1,324 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column-gap: 3em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main {
+  width: 45%;
+  margin-right: 0px;
+  /* Optional: add some space between main and box */
+  background-color: #007bff;
+  color: white;
+  height: 150vh;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+}
+
+.main a {
+  color: white;
+  font-size: 1.7em;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}
+
+.main h2 {
+  color: white;
+  font-size: 2em;
+  margin-left: 20px;
+}
+
+.main p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  /* Makes the element respect width and height */
+  color: black !important;
+  width: 40px;
+  /* Set the width of the circle */
+  height: 40px;
+  /* Set the height of the circle */
+  line-height: 40px;
+  /* Center the text vertically */
+  text-align: center;
+  /* Center the text horizontally */
+  border-radius: 50%;
+  /* Creates a circular shape */
+  border: 2px;
+  /* Add a border */
+  font-size: 24px;
+  /* Adjust the font size */
+  background-color: white;
+}
+
+.box {
+  width: 50%;
+  background-color: white;
+  max-height: 160vh;
+  padding: 15px;
+  border-top: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-bottom: 5em;
+  border-radius: 10px;
+}
+
+.box h1 {
+  font-size: 2.5em;
+  font-weight: lighter;
+  margin-top: 0px;
+}
+
+.form, .forms, .lon-form, .las-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form .form-group, .lon-form .form-group, .forms .form-group, .las-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.form .form-group input, .forms .form-group input, .lon-form .form-group input, .las-form .form-group input {
+  position: relative;
+  height: 3em;
+  border-radius: 6px;
+  padding: 0 15px;
+  outline: none;
+  font-size: 1rem;
+  text-wrap: 2px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.forms {
+  margin-top: 1.5em;
+}
+
+.forms .form-group :nth-child(2) {
+  margin-top: 2px;
+  /* Pushes the second form group down */
+}
+
+.lon-form {
+  margin-top: 1.5em;
+}
+
+.lon-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+.pharmacy-option .Pharm-owner {
+  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 7px;
+          column-gap: 7px;
+}
+
+.las-form {
+  margin-top: 1.5em;
+}
+
+.las-form .form-group :nth-child(2) {
+  margin-top: 2px;
+  /* Pushes the second form group down */
+}
+
+.las-form .form-group select {
+  position: relative;
+  height: 3em;
+  border-radius: 6px;
+  padding: 0 15px;
+  outline: none;
+  font-size: 1rem;
+  text-wrap: 2px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder, .forms .form-group input::-webkit-input-placeholder, .lon-form .form-group input::-webkit-input-placeholder, .las-form .form-group input::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+input:-ms-input-placeholder, .forms .form-group input:-ms-input-placeholder, .lon-form .form-group input:-ms-input-placeholder, .las-form .form-group input:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+input::-ms-input-placeholder, .forms .form-group input::-ms-input-placeholder, .lon-form .form-group input::-ms-input-placeholder, .las-form .form-group input::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+input::placeholder, .forms .form-group input::placeholder, .lon-form .form-group input::placeholder, .las-form .form-group input::placeholder {
+  font-size: 15px;
+}
+
+.nex-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5em;
+}
+
+.nex-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+.nex-form .form-group input {
+  position: relative;
+  height: 3em;
+  border-radius: 6px;
+  padding: 0 15px;
+  outline: none;
+  font-size: 1rem;
+  text-wrap: 2px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pharmacy-request .Pharm-owner {
+  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 7px;
+          column-gap: 7px;
+}
+
+.button {
+  width: 95%;
+  background-color: #007bff;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.button button {
+  width: 100%;
+  background-color: inherit;
+  /* Ensures the child button inherits the blue background */
+  color: inherit;
+  /* Ensures the child button inherits the black text */
+  font-size: 16px;
+  line-height: 1;
+  /* Control line height to prevent box growth */
+  padding: 5px 0;
+}
+
+.terms {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.terms a {
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.terms :hover {
+  text-decoration: underline;
+  /* Optional: Add underline back on hover */
+}
+
+.login-link {
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  outline: none;
+}
+
+.login-link a {
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.login-link :hover {
+  text-decoration: underline;
+  /* Optional: Add underline back on hover */
+}
+/*# sourceMappingURL=styles.css.map */
